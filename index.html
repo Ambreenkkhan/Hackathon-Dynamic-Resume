@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>Dynamic Resume Builder</h1>
+        
+        <div class="form-group">
+            <b><i><label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name">
+        </div>
+
+        <div class="form-group">
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" placeholder="Nationality">
+        </div>
+
+        <div class="form-group">
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" placeholder="Religion">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label><br><br>
+            <div class="radio-group">
+                <input type="radio" id="genderMale" name="gender" value="Male">
+                <label for="genderMale">Male</label>
+                <input type="radio" id="genderFemale" name="gender" value="Female">
+                <label for="genderFemale">Female</label><br><br>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Your Education"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="workExperience">Work Experience:</label>
+            <textarea id="workExperience" placeholder="Your Work Experience"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Your Skills"></textarea>
+        </div></i>
+
+        <button type="button">Build Resume</button></b>
+    </form>
+
+    
+    <div id="resumeContainer"></div>
+
+    <script src="DynamicResume.js"></script>
+</body>
+</html>
